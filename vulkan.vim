@@ -1,8 +1,9 @@
 " Vim syntax file
 " Language: C Vulkan
 " Author: Tomas Milet <imilet@fit.vutbr.cz>
+" Co Authors: [ Vincent Davis <vince@underview.tech> ] 
 " Version: 1.0
-" Last Change: Februar 17, 2016
+" Last Change: March 29, 2022
 " Notes: Adapted from opengl.vim - Marc Costa <beyond.marc@gmail.com>
 
 "CORE
