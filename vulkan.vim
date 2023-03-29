@@ -13,6 +13,7 @@ syntax keyword vkConstant VK_PIPELINE_CACHE_HEADER_VERSION_END_RANGE
 syntax keyword vkConstant VK_PIPELINE_CACHE_HEADER_VERSION_RANGE_SIZE
 syntax keyword vkConstant VK_PIPELINE_CACHE_HEADER_VERSION_MAX_ENUM
 
+" VkResult - Vulkan command return codes
 syntax keyword vkConstant VK_SUCCESS
 syntax keyword vkConstant VK_NOT_READY
 syntax keyword vkConstant VK_TIMEOUT
@@ -32,10 +33,26 @@ syntax keyword vkConstant VK_ERROR_TOO_MANY_OBJECTS
 syntax keyword vkConstant VK_ERROR_FORMAT_NOT_SUPPORTED
 syntax keyword vkConstant VK_ERROR_SURFACE_LOST_KHR
 syntax keyword vkConstant VK_ERROR_NATIVE_WINDOW_IN_USE_KHR
+syntax keyword vkConstant VK_ERROR_FRAGMENTED_POOL
+syntax keyword vkConstant VK_ERROR_OUT_OF_POOL_MEMORY
+syntax keyword vkConstant VK_ERROR_INVALID_EXTERNAL_HANDLE
+syntax keyword vkConstant VK_ERROR_FRAGMENTATION
+syntax keyword vkConstant VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS
+syntax keyword vkConstant VK_PIPELINE_COMPILE_REQUIRED
 syntax keyword vkConstant VK_SUBOPTIMAL_KHR
 syntax keyword vkConstant VK_ERROR_OUT_OF_DATE_KHR
 syntax keyword vkConstant VK_ERROR_INCOMPATIBLE_DISPLAY_KHR
 syntax keyword vkConstant VK_ERROR_VALIDATION_FAILED_EXT
+syntax keyword vkConstant VK_ERROR_INVALID_SHADER_NV
+syntax keyword vkConstant VK_ERROR_INVALID_DRM_FORMAT_MODIFIER_PLANE_LAYOUT_EXT
+syntax keyword vkConstant VK_ERROR_NOT_PERMITTED_KHR
+syntax keyword vkConstant VK_ERROR_FULL_SCREEN_EXCLUSIVE_MODE_LOST_EXT
+syntax keyword vkConstant VK_THREAD_IDLE_KHR
+syntax keyword vkConstant VK_THREAD_DONE_KHR
+syntax keyword vkConstant VK_OPERATION_DEFERRED_KHR
+syntax keyword vkConstant VK_OPERATION_NOT_DEFERRED_KHR
+syntax keyword vkConstant VK_ERROR_COMPRESSION_EXHAUSTED_EXT
+
 syntax keyword vkConstant VK_RESULT_BEGIN_RANGE
 syntax keyword vkConstant VK_RESULT_END_RANGE
 syntax keyword vkConstant VK_RESULT_RANGE_SIZE
