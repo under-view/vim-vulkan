@@ -677,6 +677,7 @@ syntax keyword vkConstant VK_QUEUE_GRAPHICS_BIT
 syntax keyword vkConstant VK_QUEUE_COMPUTE_BIT
 syntax keyword vkConstant VK_QUEUE_TRANSFER_BIT
 syntax keyword vkConstant VK_QUEUE_SPARSE_BINDING_BIT
+syntax keyword vkConstant VK_QUEUE_FAMILY_IGNORED
 
 syntax keyword vkConstant VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
 syntax keyword vkConstant VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT
@@ -995,6 +996,8 @@ syntax keyword vkType VkImageFormatProperties
 syntax keyword vkType VkPhysicalDeviceLimits
 syntax keyword vkType VkPhysicalDeviceSparseProperties
 syntax keyword vkType VkPhysicalDeviceProperties
+syntax keyword vkType VkPhysicalDeviceProperties2
+syntax keyword vkType VkPhysicalDeviceDrmPropertiesEXT
 syntax keyword vkType VkQueueFamilyProperties
 syntax keyword vkType VkMemoryType
 syntax keyword vkType VkMemoryHeap
