@@ -2,8 +2,8 @@
 " Language: C Vulkan
 " Author: Tomas Milet <imilet@fit.vutbr.cz>
 " Co Authors: [ Vincent Davis <vince@underview.tech> ] 
-" Version: 1.0
-" Last Change: March 29, 2022
+" Version: N/A
+" Last Change: April 05, 2023
 " Notes: Adapted from opengl.vim - Marc Costa <beyond.marc@gmail.com>
 
 "CORE
@@ -52,6 +52,9 @@ syntax keyword vkConstant VK_THREAD_DONE_KHR
 syntax keyword vkConstant VK_OPERATION_DEFERRED_KHR
 syntax keyword vkConstant VK_OPERATION_NOT_DEFERRED_KHR
 syntax keyword vkConstant VK_ERROR_COMPRESSION_EXHAUSTED_EXT
+
+syntax keyword vkConstant VK_TRUE
+syntax keyword vkConstant VK_FALSE
 
 syntax keyword vkConstant VK_RESULT_BEGIN_RANGE
 syntax keyword vkConstant VK_RESULT_END_RANGE
