@@ -6,6 +6,8 @@
 " Last Change: April 05, 2023
 " Notes: Adapted from opengl.vim - Marc Costa <beyond.marc@gmail.com>
 
+syntax keyword vkConstant VK_NULL_HANDLE
+
 "CORE
 syntax keyword vkConstant VK_PIPELINE_CACHE_HEADER_VERSION_ONE
 syntax keyword vkConstant VK_PIPELINE_CACHE_HEADER_VERSION_BEGIN_RANGE
