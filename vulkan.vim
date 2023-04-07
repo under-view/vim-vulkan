@@ -729,6 +729,8 @@ syntax keyword vkConstant VK_PIPELINE_STAGE_HOST_BIT
 syntax keyword vkConstant VK_PIPELINE_STAGE_ALL_GRAPHICS_BIT
 syntax keyword vkConstant VK_PIPELINE_STAGE_ALL_COMMANDS_BIT
 
+syntax keyword vkConstant VK_SUBPASS_EXTERNAL
+
 syntax keyword vkConstant VK_IMAGE_ASPECT_COLOR_BIT
 syntax keyword vkConstant VK_IMAGE_ASPECT_DEPTH_BIT
 syntax keyword vkConstant VK_IMAGE_ASPECT_STENCIL_BIT
