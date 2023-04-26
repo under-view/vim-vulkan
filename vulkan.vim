@@ -58,6 +58,10 @@ syntax keyword vkConstant VK_ERROR_COMPRESSION_EXHAUSTED_EXT
 syntax keyword vkConstant VK_TRUE
 syntax keyword vkConstant VK_FALSE
 
+syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME
+
+syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_SPEC_VERSION
+
 syntax keyword vkConstant VK_RESULT_BEGIN_RANGE
 syntax keyword vkConstant VK_RESULT_END_RANGE
 syntax keyword vkConstant VK_RESULT_RANGE_SIZE
@@ -128,6 +132,7 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_BEGIN_RANGE
 syntax keyword vkConstant VK_STRUCTURE_TYPE_END_RANGE
 syntax keyword vkConstant VK_STRUCTURE_TYPE_RANGE_SIZE
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MAX_ENUM
+syntax keyword vkConstant VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_OBJECT
@@ -854,8 +859,19 @@ syntax keyword vkConstant VK_PRESENT_MODE_END_RANGE
 syntax keyword vkConstant VK_PRESENT_MODE_RANGE_SIZE
 syntax keyword vkConstant VK_PRESENT_MODE_MAX_ENUM
 
-
-
+syntax keyword vkConstant VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_ENABLE_GPU_ASSISTED_RESERVE_BINDING_SLOT_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_ENABLE_DEBUG_PRINTF_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_ENABLE_SYNCHRONIZATION_VALIDATION_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_ALL_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_SHADERS_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_THREAD_SAFETY_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_API_PARAMETERS_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_OBJECT_LIFETIMES_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_CORE_CHECKS_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_UNIQUE_HANDLES_EXT
+syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_SHADER_VALIDATION_CACHE_EXT
 
 syntax keyword vkType VkInstance
 syntax keyword vkType VkPhysicalDevice
@@ -1121,6 +1137,9 @@ syntax keyword vkType VkRenderPassBeginInfo
 syntax keyword vkType VkDispatchIndirectCommand
 syntax keyword vkType VkDrawIndexedIndirectCommand
 syntax keyword vkType VkDrawIndirectCommand
+syntax keyword vkType VkValidationFeaturesEXT
+syntax keyword vkType VkValidationFeatureEnableEXT
+syntax keyword vkType VkValidationFeatureDisableEXT
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
