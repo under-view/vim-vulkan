@@ -720,6 +720,10 @@ syntax keyword vkConstant VK_QUEUE_GRAPHICS_BIT
 syntax keyword vkConstant VK_QUEUE_COMPUTE_BIT
 syntax keyword vkConstant VK_QUEUE_TRANSFER_BIT
 syntax keyword vkConstant VK_QUEUE_SPARSE_BINDING_BIT
+syntax keyword vkConstant VK_QUEUE_PROTECTED_BIT
+syntax keyword vkConstant VK_QUEUE_VIDEO_DECODE_BIT_KHR
+syntax keyword vkConstant VK_QUEUE_VIDEO_ENCODE_BIT_KHR
+syntax keyword vkConstant VK_QUEUE_OPTICAL_FLOW_BIT_NV
 syntax keyword vkConstant VK_QUEUE_FAMILY_IGNORED
 
 syntax keyword vkConstant VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
