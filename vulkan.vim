@@ -59,8 +59,10 @@ syntax keyword vkConstant VK_TRUE
 syntax keyword vkConstant VK_FALSE
 
 syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME
+syntax keyword vkConstant VK_EXT_PHYSICAL_DEVICE_DRM_EXTENSION_NAME
 
 syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_SPEC_VERSION
+syntax keyword vkConstant VK_EXT_PHYSICAL_DEVICE_DRM_SPEC_VERSION
 
 syntax keyword vkConstant VK_RESULT_BEGIN_RANGE
 syntax keyword vkConstant VK_RESULT_END_RANGE
@@ -133,6 +135,7 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_END_RANGE
 syntax keyword vkConstant VK_STRUCTURE_TYPE_RANGE_SIZE
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MAX_ENUM
 syntax keyword vkConstant VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT
+syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRM_PROPERTIES_EXT
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_OBJECT
