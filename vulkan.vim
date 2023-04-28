@@ -59,11 +59,13 @@ syntax keyword vkConstant VK_TRUE
 syntax keyword vkConstant VK_FALSE
 
 syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME
+syntax keyword vkConstant VK_KHR_TIMELINE_SEMAPHORE_EXTENSION_NAME
 syntax keyword vkConstant VK_EXT_PHYSICAL_DEVICE_DRM_EXTENSION_NAME
 syntax keyword vkConstant VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME
 
 syntax keyword vkConstant VK_EXT_VALIDATION_FEATURES_SPEC_VERSION
 syntax keyword vkConstant VK_EXT_PHYSICAL_DEVICE_DRM_SPEC_VERSION
+syntax keyword vkConstant VK_KHR_TIMELINE_SEMAPHORE_SPEC_VERSION
 syntax keyword vkConstant VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_SPEC_VERSION
 
 syntax keyword vkConstant VK_RESULT_BEGIN_RANGE
@@ -147,6 +149,12 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2
 syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2
 syntax keyword vkConstant VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2
+syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_OBJECT
@@ -891,6 +899,13 @@ syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_CORE_CHECKS_EXT
 syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_UNIQUE_HANDLES_EXT
 syntax keyword vkConstant VK_VALIDATION_FEATURE_DISABLE_SHADER_VALIDATION_CACHE_EXT
 
+syntax keyword vkConstant VK_SEMAPHORE_TYPE_BINARY
+syntax keyword vkConstant VK_SEMAPHORE_TYPE_BINARY_KHR
+syntax keyword vkConstant VK_SEMAPHORE_TYPE_TIMELINE
+syntax keyword vkConstant VK_SEMAPHORE_TYPE_TIMELINE_KHR
+syntax keyword vkConstant VK_SEMAPHORE_WAIT_ANY_BIT
+syntax keyword vkConstant VK_SEMAPHORE_WAIT_ANY_BIT_KHR
+
 syntax keyword vkType VkInstance
 syntax keyword vkType VkPhysicalDevice
 syntax keyword vkType VkDevice
@@ -1045,6 +1060,8 @@ syntax keyword vkType VkCommandBufferResetFlagBits
 syntax keyword vkType VkCommandBufferResetFlags
 syntax keyword vkType VkStencilFaceFlagBits
 syntax keyword vkType VkStencilFaceFlags
+syntax keyword vkType VkSemaphoreWaitFlags
+syntax keyword vkType VkSemaphoreWaitFlagBits
 
 syntax keyword vkType VkApplicationInfo
 syntax keyword vkType VkInstanceCreateInfo
@@ -1164,9 +1181,13 @@ syntax keyword vkType VkRenderPassBeginInfo
 syntax keyword vkType VkDispatchIndirectCommand
 syntax keyword vkType VkDrawIndexedIndirectCommand
 syntax keyword vkType VkDrawIndirectCommand
-syntax keyword vkType VkValidationFeaturesEXT
-syntax keyword vkType VkValidationFeatureEnableEXT
-syntax keyword vkType VkValidationFeatureDisableEXT
+syntax keyword vkType VkSemaphoreSignalInfo
+syntax keyword vkType VkSemaphoreWaitInfo
+syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreFeatures
+syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreProperties
+syntax keyword vkType VkSemaphoreType
+syntax keyword vkType VkSemaphoreTypeCreateInfo
+syntax keyword vkType VkTimelineSemaphoreSubmitInfo
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
@@ -1419,6 +1440,9 @@ syntax keyword vkFunction vkFreeCommandBuffers
 syntax keyword vkFunction vkBeginCommandBuffer
 syntax keyword vkFunction vkEndCommandBuffer
 syntax keyword vkFunction vkResetCommandBuffer
+syntax keyword vkFunction vkGetSemaphoreCounterValue
+syntax keyword vkFunction vkSignalSemaphore
+syntax keyword vkFunction vkWaitSemaphores
 syntax keyword vkFunction vkCmdBindPipeline
 syntax keyword vkFunction vkCmdSetViewport
 syntax keyword vkFunction vkCmdSetScissor
@@ -1494,6 +1518,9 @@ syntax keyword vkType VkDebugReportFlagBitsEXT
 syntax keyword vkType VkDebugReportFlagsEXT
 syntax keyword vkType PFN_vkDebugReportCallbackEXT
 syntax keyword vkType VkDebugReportCallbackCreateInfoEXT
+syntax keyword vkType VkValidationFeaturesEXT
+syntax keyword vkType VkValidationFeatureEnableEXT
+syntax keyword vkType VkValidationFeatureDisableEXT
 
 syntax keyword vkType VkSurfaceKHR
 syntax keyword vkType VkColorSpaceKHR
@@ -1528,6 +1555,14 @@ syntax keyword vkType VkAndroidSurfaceCreateFlagsKHR
 syntax keyword vkType VkAndroidSurfaceCreateInfoKHR
 syntax keyword vkType VkWin32SurfaceCreateFlagsKHR
 syntax keyword vkType VkWin32SurfaceCreateInfoKHR
+syntax keyword vkType VkSemaphoreSignalInfoKHR
+syntax keyword vkType VkSemaphoreWaitInfoKHR
+syntax keyword vkType VkSemaphoreTypeCreateInfoKHR
+syntax keyword vkType VkTimelineSemaphoreSubmitInfoKHR
+syntax keyword vkType VkSemaphoreWaitFlagsKHR
+syntax keyword vkType VkSemaphoreWaitFlagBitsKHR
+syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreFeaturesKHR
+syntax keyword vkType VkPhysicalDeviceTimelineSemaphorePropertiesKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
@@ -1595,7 +1630,9 @@ syntax keyword vkFunction vkGetPhysicalDeviceMirPresentationSupportKHR
 syntax keyword vkFunction vkCreateAndroidSurfaceKHR
 syntax keyword vkFunction vkCreateWin32SurfaceKHR
 syntax keyword vkFunction vkGetPhysicalDeviceWin32PresentationSupportKHR
-
+syntax keyword vkFunction vkGetSemaphoreCounterValueKHR
+syntax keyword vkFunction vkSignalSemaphoreKHR
+syntax keyword vkFunction vkWaitSemaphoresKHR
 
 
 "EXT
