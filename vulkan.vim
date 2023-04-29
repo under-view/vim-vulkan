@@ -415,6 +415,11 @@ syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR
 
+syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT
+syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT
+syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR
+syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR
+
 syntax keyword vkConstant VK_PHYSICAL_DEVICE_TYPE_OTHER
 syntax keyword vkConstant VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU
 syntax keyword vkConstant VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
@@ -1082,6 +1087,7 @@ syntax keyword vkType VkStencilFaceFlags
 syntax keyword vkType VkSemaphoreWaitFlags
 syntax keyword vkType VkSemaphoreWaitFlagBits
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBits
+syntax keyword vkType VkExternalSemaphoreFeatureFlagBits
 
 syntax keyword vkType VkApplicationInfo
 syntax keyword vkType VkInstanceCreateInfo
@@ -1586,6 +1592,7 @@ syntax keyword vkType VkSemaphoreWaitFlagBitsKHR
 syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreFeaturesKHR
 syntax keyword vkType VkPhysicalDeviceTimelineSemaphorePropertiesKHR
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBitsKHR
+syntax keyword vkType VkExternalSemaphoreFeatureFlagBitsKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
