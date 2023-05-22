@@ -821,6 +821,8 @@ syntax keyword vkConstant VK_QUERY_CONTROL_PRECISE_BIT
 
 syntax keyword vkConstant VK_COMMAND_BUFFER_RESET_RELEASE_RESOURCES_BIT
 
+syntax keyword vkConstant VK_SEMAPHORE_IMPORT_TEMPORARY_BIT
+
 syntax keyword vkConstant VK_STENCIL_FACE_FRONT_BIT
 syntax keyword vkConstant VK_STENCIL_FACE_BACK_BIT
 syntax keyword vkConstant VK_STENCIL_FRONT_AND_BACK
@@ -906,6 +908,7 @@ syntax keyword vkType VkCommandBufferLevel
 syntax keyword vkType VkIndexType
 syntax keyword vkType VkSubpassContents
 syntax keyword vkType VkInstanceCreateFlags
+syntax keyword vkType VkSemaphoreImportFlags
 syntax keyword vkType VkFormatFeatureFlagBits
 syntax keyword vkType VkFormatFeatureFlags
 syntax keyword vkType VkImageUsageFlagBits
@@ -998,6 +1001,7 @@ syntax keyword vkType VkSemaphoreWaitFlagBits
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBits
 syntax keyword vkType VkExternalSemaphoreFeatureFlagBits
 syntax keyword vkType VkExternalMemoryHandleTypeFlagBits
+syntax keyword vkType VkSemaphoreImportFlagBits
 
 syntax keyword vkType VkApplicationInfo
 syntax keyword vkType VkInstanceCreateInfo
@@ -1461,6 +1465,7 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR
 
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
@@ -1506,6 +1511,8 @@ syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR
+
+syntax keyword vkConstant VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR
 
 syntax keyword vkType VkSurfaceKHR
 syntax keyword vkType VkColorSpaceKHR
@@ -1554,6 +1561,8 @@ syntax keyword vkType VkMemoryFdPropertiesKHR
 syntax keyword vkType VkMemoryGetFdInfoKHR
 syntax keyword vkType VkImportMemoryFdInfoKHR
 syntax keyword vkType VkExternalMemoryImageCreateInfoKHR
+syntax keyword vkType VkExportSemaphoreCreateInfoKHR
+syntax keyword vkType VkSemaphoreImportFlagsKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
