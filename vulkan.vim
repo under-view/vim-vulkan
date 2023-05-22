@@ -161,6 +161,10 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES
+syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES
+syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO
+
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_OBJECT
@@ -1517,7 +1521,6 @@ syntax keyword vkFunction vkCmdEndRenderPass
 syntax keyword vkFunction vkCmdExecuteCommands
 
 
-
 "KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
@@ -1538,6 +1541,10 @@ syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_OPAQUE_BIT_KHR
 syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_GLOBAL_BIT_KHR
 syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_PER_PIXEL_BIT_KHR
 syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_PER_PIXEL_PREMULTIPLIED_BIT_KHR
+
+syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO_KHR
 
 syntax keyword vkType VkDebugReportCallbackEXT
 syntax keyword vkType VkDebugReportObjectTypeEXT
@@ -1593,6 +1600,9 @@ syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreFeaturesKHR
 syntax keyword vkType VkPhysicalDeviceTimelineSemaphorePropertiesKHR
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBitsKHR
 syntax keyword vkType VkExternalSemaphoreFeatureFlagBitsKHR
+syntax keyword vkType VkMemoryFdPropertiesKHR
+syntax keyword vkType VkMemoryGetFdInfoKHR
+syntax keyword vkType VkImportMemoryFdInfoKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
@@ -1630,6 +1640,8 @@ syntax keyword vkType PFN_vkGetPhysicalDeviceXcbPresentationSupportKHR
 syntax keyword vkType PFN_vkGetPhysicalDeviceXlibPresentationSupportKHR
 syntax keyword vkType PFN_vkGetSwapchainImagesKHR
 syntax keyword vkType PFN_vkQueuePresentKHR
+syntax keyword vkType PFN_vkGetMemoryFdKHR
+syntax keyword vkType PFN_vkGetMemoryFdPropertiesKHR
 
 syntax keyword vkFunction vkDestroySurfaceKHR
 syntax keyword vkFunction vkGetPhysicalDeviceSurfaceSupportKHR
@@ -1663,6 +1675,8 @@ syntax keyword vkFunction vkGetPhysicalDeviceWin32PresentationSupportKHR
 syntax keyword vkFunction vkGetSemaphoreCounterValueKHR
 syntax keyword vkFunction vkSignalSemaphoreKHR
 syntax keyword vkFunction vkWaitSemaphoresKHR
+syntax keyword vkFunction vkGetMemoryFdKHR
+syntax keyword vkFunction vkGetMemoryFdPropertiesKHR
 
 
 "EXT
