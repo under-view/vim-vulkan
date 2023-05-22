@@ -1082,6 +1082,7 @@ syntax keyword vkType VkSemaphoreWaitFlags
 syntax keyword vkType VkSemaphoreWaitFlagBits
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBits
 syntax keyword vkType VkExternalSemaphoreFeatureFlagBits
+syntax keyword vkType VkExternalMemoryHandleTypeFlagBits
 
 syntax keyword vkType VkApplicationInfo
 syntax keyword vkType VkInstanceCreateInfo
@@ -1708,6 +1709,8 @@ syntax keyword vkConstant VK_DEBUG_REPORT_WARNING_BIT_EXT
 syntax keyword vkConstant VK_DEBUG_REPORT_PERFORMANCE_WARNING_BIT_EXT
 syntax keyword vkConstant VK_DEBUG_REPORT_ERROR_BIT_EXT
 syntax keyword vkConstant VK_DEBUG_REPORT_DEBUG_BIT_EXT
+
+syntax keyword vkConstant VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT
 
 syntax keyword vkType PFN_vkCreateDebugReportCallbackEXT
 syntax keyword vkType PFN_vkDebugReportCallbackEXT
