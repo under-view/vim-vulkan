@@ -151,6 +151,7 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES
 syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO
 
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
@@ -1208,6 +1209,7 @@ syntax keyword vkType VkSemaphoreType
 syntax keyword vkType VkSemaphoreTypeCreateInfo
 syntax keyword vkType VkTimelineSemaphoreSubmitInfo
 syntax keyword vkType VkExternalSemaphoreProperties
+syntax keyword vkType VkExternalMemoryImageCreateInfo
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
@@ -1591,6 +1593,7 @@ syntax keyword vkType VkExternalSemaphoreFeatureFlagBitsKHR
 syntax keyword vkType VkMemoryFdPropertiesKHR
 syntax keyword vkType VkMemoryGetFdInfoKHR
 syntax keyword vkType VkImportMemoryFdInfoKHR
+syntax keyword vkType VkExternalMemoryImageCreateInfoKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
