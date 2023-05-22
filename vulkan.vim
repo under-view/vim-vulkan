@@ -112,6 +112,9 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO
 syntax keyword vkConstant VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO
 
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
@@ -1466,6 +1469,8 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_SIGNAL_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_TYPE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR
 
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
@@ -1563,6 +1568,8 @@ syntax keyword vkType VkImportMemoryFdInfoKHR
 syntax keyword vkType VkExternalMemoryImageCreateInfoKHR
 syntax keyword vkType VkExportSemaphoreCreateInfoKHR
 syntax keyword vkType VkSemaphoreImportFlagsKHR
+syntax keyword vkType VkImportSemaphoreFdInfoKHR
+syntax keyword vkType VkSemaphoreGetFdInfoKHR
 
 syntax keyword vkType VkDisplayKHR
 syntax keyword vkType VkDisplayModeKHR
@@ -1602,6 +1609,8 @@ syntax keyword vkType PFN_vkGetSwapchainImagesKHR
 syntax keyword vkType PFN_vkQueuePresentKHR
 syntax keyword vkType PFN_vkGetMemoryFdKHR
 syntax keyword vkType PFN_vkGetMemoryFdPropertiesKHR
+syntax keyword vkType PFN_vkGetSemaphoreFdKHR
+syntax keyword vkType PFN_vkImportSemaphoreFdKHR
 
 syntax keyword vkFunction vkDestroySurfaceKHR
 syntax keyword vkFunction vkGetPhysicalDeviceSurfaceSupportKHR
@@ -1637,6 +1646,8 @@ syntax keyword vkFunction vkSignalSemaphoreKHR
 syntax keyword vkFunction vkWaitSemaphoresKHR
 syntax keyword vkFunction vkGetMemoryFdKHR
 syntax keyword vkFunction vkGetMemoryFdPropertiesKHR
+syntax keyword vkFunction vkGetSemaphoreFdKHR
+syntax keyword vkFunction vkImportSemaphoreFdKHR
 
 
 "EXT
