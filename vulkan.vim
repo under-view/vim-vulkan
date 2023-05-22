@@ -825,6 +825,7 @@ syntax keyword vkConstant VK_QUERY_CONTROL_PRECISE_BIT
 syntax keyword vkConstant VK_COMMAND_BUFFER_RESET_RELEASE_RESOURCES_BIT
 
 syntax keyword vkConstant VK_SEMAPHORE_IMPORT_TEMPORARY_BIT
+syntax keyword vkConstant VK_FENCE_IMPORT_TEMPORARY_BIT
 
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT
@@ -833,6 +834,11 @@ syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_ZIRCON_EVENT_BIT_FUCHSIA
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D11_FENCE_BIT
+
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT
 
 syntax keyword vkConstant VK_STENCIL_FACE_FRONT_BIT
 syntax keyword vkConstant VK_STENCIL_FACE_BACK_BIT
@@ -1014,6 +1020,8 @@ syntax keyword vkType VkExternalSemaphoreFeatureFlagBits
 syntax keyword vkType VkExternalMemoryHandleTypeFlagBits
 syntax keyword vkType VkSemaphoreImportFlagBits
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBits
+syntax keyword vkType VkExternalFenceHandleTypeFlagBits
+syntax keyword vkType VkFenceImportFlagBits
 
 syntax keyword vkType VkApplicationInfo
 syntax keyword vkType VkInstanceCreateInfo
@@ -1480,6 +1488,8 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_WAIT_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR
 
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
@@ -1525,7 +1535,13 @@ syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR
 syntax keyword vkConstant VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR
 
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR
+syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR
+
 syntax keyword vkConstant VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR
+syntax keyword vkConstant VK_FENCE_IMPORT_TEMPORARY_BIT_KHR
 
 syntax keyword vkType VkSurfaceKHR
 syntax keyword vkType VkColorSpaceKHR
@@ -1585,6 +1601,10 @@ syntax keyword vkType VkDisplayPlaneAlphaFlagsKHR
 syntax keyword vkType VkDisplaySurfaceCreateFlagsKHR
 syntax keyword vkType VkSemaphoreImportFlagsKHR
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBitsKHR
+syntax keyword vkType VkFenceGetFdInfoKHR
+syntax keyword vkType VkImportFenceFdInfoKHR
+syntax keyword vkType VkExternalFenceHandleTypeFlagBitsKHR
+syntax keyword vkType VkFenceImportFlagBitsKHR
 
 syntax keyword vkType PFN_vkAcquireNextImageKHR
 syntax keyword vkType PFN_vkCreateAndroidSurfaceKHR
@@ -1619,6 +1639,8 @@ syntax keyword vkType PFN_vkGetMemoryFdKHR
 syntax keyword vkType PFN_vkGetMemoryFdPropertiesKHR
 syntax keyword vkType PFN_vkGetSemaphoreFdKHR
 syntax keyword vkType PFN_vkImportSemaphoreFdKHR
+syntax keyword vkType PFN_vkGetFenceFdKHR
+syntax keyword vkType PFN_vkImportFenceFdKHR
 
 syntax keyword vkFunction vkDestroySurfaceKHR
 syntax keyword vkFunction vkGetPhysicalDeviceSurfaceSupportKHR
@@ -1656,6 +1678,8 @@ syntax keyword vkFunction vkGetMemoryFdKHR
 syntax keyword vkFunction vkGetMemoryFdPropertiesKHR
 syntax keyword vkFunction vkGetSemaphoreFdKHR
 syntax keyword vkFunction vkImportSemaphoreFdKHR
+syntax keyword vkFunction vkGetFenceFdKHR
+syntax keyword vkFunction vkImportFenceFdKHR
 
 
 "EXT
