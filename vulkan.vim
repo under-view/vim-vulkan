@@ -123,6 +123,8 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS
+syntax keyword vkConstant VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO
+syntax keyword vkConstant VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO
 
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_COMMAND
 syntax keyword vkConstant VK_SYSTEM_ALLOCATION_SCOPE_OBJECT
@@ -682,6 +684,7 @@ syntax keyword vkConstant VK_IMAGE_CREATE_SPARSE_RESIDENCY_BIT
 syntax keyword vkConstant VK_IMAGE_CREATE_SPARSE_ALIASED_BIT
 syntax keyword vkConstant VK_IMAGE_CREATE_MUTABLE_FORMAT_BIT
 syntax keyword vkConstant VK_IMAGE_CREATE_CUBE_COMPATIBLE_BIT
+syntax keyword vkConstant VK_IMAGE_CREATE_ALIAS_BIT
 
 syntax keyword vkConstant VK_SAMPLE_COUNT_1_BIT
 syntax keyword vkConstant VK_SAMPLE_COUNT_2_BIT
@@ -1166,6 +1169,8 @@ syntax keyword vkType VkMemoryRequirements2
 syntax keyword vkType VkSparseImageMemoryRequirements2
 syntax keyword vkType VkMemoryDedicatedAllocateInfo
 syntax keyword vkType VkMemoryDedicatedRequirements
+syntax keyword vkType VkBindBufferMemoryInfo
+syntax keyword vkType VkBindImageMemoryInfo
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
@@ -1320,6 +1325,8 @@ syntax keyword vkType PFN_vkWaitForFences
 syntax keyword vkType PFN_vkGetBufferMemoryRequirements2
 syntax keyword vkType PFN_vkGetImageMemoryRequirements2
 syntax keyword vkType PFN_vkGetImageSparseMemoryRequirements2
+syntax keyword vkType PFN_vkBindBufferMemory2
+syntax keyword vkType PFN_vkBindImageMemory2
 
 syntax keyword vkFunction vkCreateInstance
 syntax keyword vkFunction vkDestroyInstance
@@ -1471,6 +1478,8 @@ syntax keyword vkFunction vkCmdExecuteCommands
 syntax keyword vkFunction vkGetBufferMemoryRequirements2
 syntax keyword vkFunction vkGetImageMemoryRequirements2
 syntax keyword vkFunction vkGetImageSparseMemoryRequirements2
+syntax keyword vkFunction vkBindBufferMemory2
+syntax keyword vkFunction vkBindImageMemory2
 
 
 "KHR
@@ -1526,6 +1535,8 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR
 
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
 syntax keyword vkConstant VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
@@ -1558,6 +1569,8 @@ syntax keyword vkConstant VK_QUEUE_VIDEO_DECODE_BIT_KHR
 syntax keyword vkConstant VK_QUEUE_VIDEO_ENCODE_BIT_KHR
 
 syntax keyword vkConstant VK_IMAGE_LAYOUT_PRESENT_SRC_KHR
+
+syntax keyword vkConstant VK_IMAGE_CREATE_ALIAS_BIT_KHR
 
 syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_OPAQUE_BIT_KHR
 syntax keyword vkConstant VK_DISPLAY_PLANE_ALPHA_GLOBAL_BIT_KHR
@@ -1657,6 +1670,8 @@ syntax keyword vkType VkMemoryRequirements2KHR
 syntax keyword vkType VkSparseImageMemoryRequirements2KHR
 syntax keyword vkType VkMemoryDedicatedAllocateInfoKHR
 syntax keyword vkType VkMemoryDedicatedRequirementsKHR
+syntax keyword vkType VkBindBufferMemoryInfoKHR
+syntax keyword vkType VkBindImageMemoryInfoKHR
 
 syntax keyword vkType PFN_vkAcquireNextImageKHR
 syntax keyword vkType PFN_vkCreateAndroidSurfaceKHR
@@ -1703,6 +1718,8 @@ syntax keyword vkType PFN_vkGetPhysicalDeviceSparseImageFormatProperties2KHR
 syntax keyword vkType PFN_vkGetBufferMemoryRequirements2KHR
 syntax keyword vkType PFN_vkGetImageMemoryRequirements2KHR
 syntax keyword vkType PFN_vkGetImageSparseMemoryRequirements2KHR
+syntax keyword vkType PFN_vkBindBufferMemory2KHR
+syntax keyword vkType PFN_vkBindImageMemory2KHR
 
 syntax keyword vkFunction vkDestroySurfaceKHR
 syntax keyword vkFunction vkGetPhysicalDeviceSurfaceSupportKHR
@@ -1752,6 +1769,8 @@ syntax keyword vkFunction vkGetPhysicalDeviceSparseImageFormatProperties2KHR
 syntax keyword vkFunction vkGetBufferMemoryRequirements2KHR
 syntax keyword vkFunction vkGetImageMemoryRequirements2KHR
 syntax keyword vkFunction vkGetImageSparseMemoryRequirements2KHR
+syntax keyword vkFunction vkBindBufferMemory2KHR
+syntax keyword vkFunction vkBindImageMemory2KHR
 
 
 
