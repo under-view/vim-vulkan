@@ -727,6 +727,45 @@ syntax keyword vkConstant VK_PIPELINE_STAGE_BOTTOM_OF_PIPE_BIT
 syntax keyword vkConstant VK_PIPELINE_STAGE_HOST_BIT
 syntax keyword vkConstant VK_PIPELINE_STAGE_ALL_GRAPHICS_BIT
 syntax keyword vkConstant VK_PIPELINE_STAGE_ALL_COMMANDS_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_NONE
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TOP_OF_PIPE_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_DRAW_INDIRECT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_INPUT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TESSELLATION_CONTROL_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_GEOMETRY_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_FRAGMENT_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_EARLY_FRAGMENT_TESTS_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_LATE_FRAGMENT_TESTS_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COLOR_ATTACHMENT_OUTPUT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_TRANSFER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TRANSFER_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_BOTTOM_OF_PIPE_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_HOST_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_GRAPHICS_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COPY_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_RESOLVE_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_BLIT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_CLEAR_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_INDEX_INPUT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_ATTRIBUTE_INPUT_BIT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_PRE_RASTERIZATION_SHADERS_BIT
+
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COMMAND_PREPROCESS_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_SHADING_RATE_IMAGE_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TASK_SHADER_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_MESH_SHADER_BIT_NV
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_OPTICAL_FLOW_BIT_NV
+
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_SUBPASS_SHADER_BIT_HUAWEI
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_SUBPASS_SHADING_BIT_HUAWEI
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_INVOCATION_MASK_BIT_HUAWEI
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_CLUSTER_CULLING_SHADER_BIT_HUAWEI
 
 syntax keyword vkConstant VK_SUBPASS_EXTERNAL
 
@@ -819,6 +858,37 @@ syntax keyword vkConstant VK_ACCESS_HOST_READ_BIT
 syntax keyword vkConstant VK_ACCESS_HOST_WRITE_BIT
 syntax keyword vkConstant VK_ACCESS_MEMORY_READ_BIT
 syntax keyword vkConstant VK_ACCESS_MEMORY_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_NONE
+syntax keyword vkConstant VK_ACCESS_2_INDIRECT_COMMAND_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_INDEX_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_VERTEX_ATTRIBUTE_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_UNIFORM_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_INPUT_ATTACHMENT_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_SHADER_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_SHADER_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_COLOR_ATTACHMENT_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_COLOR_ATTACHMENT_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_TRANSFER_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_TRANSFER_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_HOST_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_HOST_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_MEMORY_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_MEMORY_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_SHADER_SAMPLED_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_SHADER_STORAGE_READ_BIT
+syntax keyword vkConstant VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT
+syntax keyword vkConstant VK_ACCESS_2_COMMAND_PREPROCESS_READ_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_COMMAND_PREPROCESS_WRITE_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_SHADING_RATE_IMAGE_READ_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_ACCELERATION_STRUCTURE_READ_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_ACCELERATION_STRUCTURE_WRITE_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_INVOCATION_MASK_READ_BIT_HUAWEI
+syntax keyword vkConstant VK_ACCESS_2_OPTICAL_FLOW_READ_BIT_NV
+syntax keyword vkConstant VK_ACCESS_2_OPTICAL_FLOW_WRITE_BIT_NV
+
+syntax keyword vkConstant VK_SUBMIT_PROTECTED_BIT
 
 syntax keyword vkConstant VK_DEPENDENCY_BY_REGION_BIT
 
@@ -937,6 +1007,8 @@ syntax keyword vkType VkIndexType
 syntax keyword vkType VkSubpassContents
 syntax keyword vkType VkInstanceCreateFlags
 syntax keyword vkType VkSemaphoreImportFlags
+syntax keyword vkType VkSubmitFlags
+syntax keyword vkType VkSubmitFlagBits
 syntax keyword vkType VkFormatFeatureFlagBits
 syntax keyword vkType VkFormatFeatureFlags
 syntax keyword vkType VkImageUsageFlagBits
@@ -954,7 +1026,9 @@ syntax keyword vkType VkMemoryHeapFlags
 syntax keyword vkType VkDeviceCreateFlags
 syntax keyword vkType VkDeviceQueueCreateFlags
 syntax keyword vkType VkPipelineStageFlagBits
+syntax keyword vkType VkPipelineStageFlagBits2
 syntax keyword vkType VkPipelineStageFlags
+syntax keyword vkType VkPipelineStageFlags2
 syntax keyword vkType VkMemoryMapFlags
 syntax keyword vkType VkImageAspectFlagBits
 syntax keyword vkType VkImageAspectFlags
@@ -1009,7 +1083,9 @@ syntax keyword vkType VkAttachmentDescriptionFlagBits
 syntax keyword vkType VkAttachmentDescriptionFlags
 syntax keyword vkType VkSubpassDescriptionFlags
 syntax keyword vkType VkAccessFlagBits
+syntax keyword vkType VkAccessFlagBits2
 syntax keyword vkType VkAccessFlags
+syntax keyword vkType VkAccessFlags2
 syntax keyword vkType VkDependencyFlagBits
 syntax keyword vkType VkDependencyFlags
 syntax keyword vkType VkCommandPoolCreateFlagBits
@@ -1063,6 +1139,7 @@ syntax keyword vkType VkDeviceCreateInfo
 syntax keyword vkType VkExtensionProperties
 syntax keyword vkType VkLayerProperties
 syntax keyword vkType VkSubmitInfo
+syntax keyword vkType VkSubmitInfo2
 syntax keyword vkType VkMemoryAllocateInfo
 syntax keyword vkType VkMappedMemoryRange
 syntax keyword vkType VkMemoryRequirements
@@ -1129,6 +1206,7 @@ syntax keyword vkType VkAttachmentDescription
 syntax keyword vkType VkAttachmentReference
 syntax keyword vkType VkSubpassDescription
 syntax keyword vkType VkSubpassDependency
+syntax keyword vkType VkSubpassDependency2
 syntax keyword vkType VkRenderPassCreateInfo
 syntax keyword vkType VkCommandPoolCreateInfo
 syntax keyword vkType VkCommandBufferAllocateInfo
@@ -1146,8 +1224,11 @@ syntax keyword vkType VkClearAttachment
 syntax keyword vkType VkClearRect
 syntax keyword vkType VkImageResolve
 syntax keyword vkType VkMemoryBarrier
+syntax keyword vkType VkMemoryBarrier2
 syntax keyword vkType VkBufferMemoryBarrier
+syntax keyword vkType VkBufferMemoryBarrier2
 syntax keyword vkType VkImageMemoryBarrier
+syntax keyword vkType VkImageMemoryBarrier2
 syntax keyword vkType VkRenderPassBeginInfo
 syntax keyword vkType VkDispatchIndirectCommand
 syntax keyword vkType VkDrawIndexedIndirectCommand
@@ -1171,6 +1252,11 @@ syntax keyword vkType VkMemoryDedicatedAllocateInfo
 syntax keyword vkType VkMemoryDedicatedRequirements
 syntax keyword vkType VkBindBufferMemoryInfo
 syntax keyword vkType VkBindImageMemoryInfo
+syntax keyword vkType VkPhysicalDeviceSynchronization2Features
+syntax keyword vkType VkDependencyInfo
+syntax keyword vkType VkCheckpointData2NV
+syntax keyword vkType VkCommandBufferSubmitInfo
+syntax keyword vkType VkSemaphoreSubmitInfo
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
@@ -1206,14 +1292,17 @@ syntax keyword vkType PFN_vkCmdExecuteCommands
 syntax keyword vkType PFN_vkCmdFillBuffer
 syntax keyword vkType PFN_vkCmdNextSubpass
 syntax keyword vkType PFN_vkCmdPipelineBarrier
+syntax keyword vkType PFN_vkCmdPipelineBarrier2
 syntax keyword vkType PFN_vkCmdPushConstants
 syntax keyword vkType PFN_vkCmdResetEvent
+syntax keyword vkType PFN_vkCmdResetEvent2
 syntax keyword vkType PFN_vkCmdResetQueryPool
 syntax keyword vkType PFN_vkCmdResolveImage
 syntax keyword vkType PFN_vkCmdSetBlendConstants
 syntax keyword vkType PFN_vkCmdSetDepthBias
 syntax keyword vkType PFN_vkCmdSetDepthBounds
 syntax keyword vkType PFN_vkCmdSetEvent
+syntax keyword vkType PFN_vkCmdSetEvent2
 syntax keyword vkType PFN_vkCmdSetLineWidth
 syntax keyword vkType PFN_vkCmdSetScissor
 syntax keyword vkType PFN_vkCmdSetStencilCompareMask
@@ -1222,7 +1311,9 @@ syntax keyword vkType PFN_vkCmdSetStencilWriteMask
 syntax keyword vkType PFN_vkCmdSetViewport
 syntax keyword vkType PFN_vkCmdUpdateBuffer
 syntax keyword vkType PFN_vkCmdWaitEvents
+syntax keyword vkType PFN_vkCmdWaitEvents2
 syntax keyword vkType PFN_vkCmdWriteTimestamp
+syntax keyword vkType PFN_vkCmdWriteTimestamp2
 syntax keyword vkType PFN_vkCreateBuffer
 syntax keyword vkType PFN_vkCreateBufferView
 syntax keyword vkType PFN_vkCreateCommandPool
@@ -1310,6 +1401,7 @@ syntax keyword vkType PFN_vkMapMemory
 syntax keyword vkType PFN_vkMergePipelineCaches
 syntax keyword vkType PFN_vkQueueBindSparse
 syntax keyword vkType PFN_vkQueueSubmit
+syntax keyword vkType PFN_vkQueueSubmit2
 syntax keyword vkType PFN_vkQueueWaitIdle
 syntax keyword vkType PFN_vkReallocationFunction
 syntax keyword vkType PFN_vkResetCommandBuffer
@@ -1353,6 +1445,7 @@ syntax keyword vkFunction vkEnumerateInstanceLayerProperties
 syntax keyword vkFunction vkEnumerateDeviceLayerProperties
 syntax keyword vkFunction vkGetDeviceQueue
 syntax keyword vkFunction vkQueueSubmit
+syntax keyword vkFunction vkQueueSubmit2
 syntax keyword vkFunction vkQueueWaitIdle
 syntax keyword vkFunction vkDeviceWaitIdle
 syntax keyword vkFunction vkAllocateMemory
@@ -1462,13 +1555,18 @@ syntax keyword vkFunction vkCmdClearDepthStencilImage
 syntax keyword vkFunction vkCmdClearAttachments
 syntax keyword vkFunction vkCmdResolveImage
 syntax keyword vkFunction vkCmdSetEvent
+syntax keyword vkFunction vkCmdSetEvent2
 syntax keyword vkFunction vkCmdResetEvent
+syntax keyword vkFunction vkCmdResetEvent2
 syntax keyword vkFunction vkCmdWaitEvents
+syntax keyword vkFunction vkCmdWaitEvents2
 syntax keyword vkFunction vkCmdPipelineBarrier
+syntax keyword vkFunction vkCmdPipelineBarrier2
 syntax keyword vkFunction vkCmdBeginQuery
 syntax keyword vkFunction vkCmdEndQuery
 syntax keyword vkFunction vkCmdResetQueryPool
 syntax keyword vkFunction vkCmdWriteTimestamp
+syntax keyword vkFunction vkCmdWriteTimestamp2
 syntax keyword vkFunction vkCmdCopyQueryPoolResults
 syntax keyword vkFunction vkCmdPushConstants
 syntax keyword vkFunction vkCmdBeginRenderPass
@@ -1480,6 +1578,8 @@ syntax keyword vkFunction vkGetImageMemoryRequirements2
 syntax keyword vkFunction vkGetImageSparseMemoryRequirements2
 syntax keyword vkFunction vkBindBufferMemory2
 syntax keyword vkFunction vkBindImageMemory2
+syntax keyword vkFunction vkCmdWriteBufferMarker2AMD
+syntax keyword vkFunction vkGetQueueCheckpointData2NV
 
 
 "KHR
@@ -1508,6 +1608,7 @@ syntax keyword vkConstant VK_STRUCTURE_TYPE_WAYLAND_SURFACE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_MIR_SURFACE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_ANDROID_SURFACE_CREATE_INFO_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR
+syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_FEATURES_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TIMELINE_SEMAPHORE_PROPERTIES_KHR
 syntax keyword vkConstant VK_STRUCTURE_TYPE_TIMELINE_SEMAPHORE_SUBMIT_INFO_KHR
@@ -1592,6 +1693,71 @@ syntax keyword vkConstant VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR
 syntax keyword vkConstant VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR
 syntax keyword vkConstant VK_FENCE_IMPORT_TEMPORARY_BIT_KHR
 
+syntax keyword vkConstant VK_SUBMIT_PROTECTED_BIT_KHR
+
+syntax keyword vkConstant VK_ACCESS_2_NONE_KHR
+syntax keyword vkConstant VK_ACCESS_2_INDIRECT_COMMAND_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_INDEX_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_VERTEX_ATTRIBUTE_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_UNIFORM_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_INPUT_ATTACHMENT_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_COLOR_ATTACHMENT_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_COLOR_ATTACHMENT_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_TRANSFER_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_TRANSFER_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_HOST_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_HOST_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_MEMORY_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_MEMORY_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_SAMPLED_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_STORAGE_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_VIDEO_DECODE_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_VIDEO_DECODE_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_VIDEO_ENCODE_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_VIDEO_ENCODE_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_ACCELERATION_STRUCTURE_READ_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_ACCELERATION_STRUCTURE_WRITE_BIT_KHR
+syntax keyword vkConstant VK_ACCESS_2_SHADER_BINDING_TABLE_READ_BIT_KHR
+
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_NONE_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TOP_OF_PIPE_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_DRAW_INDIRECT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_INPUT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TESSELLATION_CONTROL_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_GEOMETRY_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_FRAGMENT_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_EARLY_FRAGMENT_TESTS_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_LATE_FRAGMENT_TESTS_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COLOR_ATTACHMENT_OUTPUT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_TRANSFER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TRANSFER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_BOTTOM_OF_PIPE_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_HOST_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_GRAPHICS_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_COPY_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_RESOLVE_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_BLIT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_CLEAR_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_INDEX_INPUT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VERTEX_ATTRIBUTE_INPUT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_PRE_RASTERIZATION_SHADERS_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VIDEO_DECODE_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_VIDEO_ENCODE_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_FRAGMENT_SHADING_RATE_ATTACHMENT_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_COPY_BIT_KHR
+
 syntax keyword vkType VkSurfaceKHR
 syntax keyword vkType VkColorSpaceKHR
 syntax keyword vkType VkPresentModeKHR
@@ -1604,6 +1770,10 @@ syntax keyword vkType VkSurfaceFormatKHR
 syntax keyword vkType VkSwapchainKHR
 syntax keyword vkType VkSwapchainCreateFlagsKHR
 syntax keyword vkType VkSwapchainCreateInfoKHR
+syntax keyword vkType VkSubmitInfoKHR
+syntax keyword vkType VkSubmitInfo2KHR
+syntax keyword vkType VkSubpassDependencyKHR
+syntax keyword vkType VkSubpassDependency2KHR
 syntax keyword vkType VkPresentInfoKHR
 syntax keyword vkType VkDisplayPropertiesKHR
 syntax keyword vkType VkDisplayModeParametersKHR
@@ -1635,6 +1805,8 @@ syntax keyword vkType VkPhysicalDeviceTimelineSemaphoreFeaturesKHR
 syntax keyword vkType VkPhysicalDeviceTimelineSemaphorePropertiesKHR
 syntax keyword vkType VkExternalSemaphoreHandleTypeFlagBitsKHR
 syntax keyword vkType VkExternalSemaphoreFeatureFlagBitsKHR
+syntax keyword vkType VkMemoryBarrierKHR
+syntax keyword vkType VkMemoryBarrier2KHR
 syntax keyword vkType VkMemoryFdPropertiesKHR
 syntax keyword vkType VkMemoryGetFdInfoKHR
 syntax keyword vkType VkImportMemoryFdInfoKHR
@@ -1672,6 +1844,22 @@ syntax keyword vkType VkMemoryDedicatedAllocateInfoKHR
 syntax keyword vkType VkMemoryDedicatedRequirementsKHR
 syntax keyword vkType VkBindBufferMemoryInfoKHR
 syntax keyword vkType VkBindImageMemoryInfoKHR
+syntax keyword vkType VkPhysicalDeviceSynchronization2FeaturesKHR
+syntax keyword vkType VkDependencyInfoKHR
+syntax keyword vkType VkBufferMemoryBarrierKHR
+syntax keyword vkType VkBufferMemoryBarrier2KHR
+syntax keyword vkType VkImageMemoryBarrierKHR
+syntax keyword vkType VkImageMemoryBarrier2KHR
+syntax keyword vkType VkCommandBufferSubmitInfoKHR
+syntax keyword vkType VkSemaphoreSubmitInfoKHR
+syntax keyword vkType VkAccessFlagsKHR
+syntax keyword vkType VkAccessFlags2KHR
+syntax keyword vkType VkPipelineStageFlagBitsKHR
+syntax keyword vkType VkPipelineStageFlagBits2KHR
+syntax keyword vkType VkPipelineStageFlagsKHR
+syntax keyword vkType VkPipelineStageFlags2KHR
+syntax keyword vkType VkSubmitFlagsKHR
+syntax keyword vkType VkSubmitFlagBitsKHR
 
 syntax keyword vkType PFN_vkAcquireNextImageKHR
 syntax keyword vkType PFN_vkCreateAndroidSurfaceKHR
@@ -1771,7 +1959,18 @@ syntax keyword vkFunction vkGetImageMemoryRequirements2KHR
 syntax keyword vkFunction vkGetImageSparseMemoryRequirements2KHR
 syntax keyword vkFunction vkBindBufferMemory2KHR
 syntax keyword vkFunction vkBindImageMemory2KHR
-
+syntax keyword vkFunction vkCmdPipelineBarrierKHR
+syntax keyword vkFunction vkCmdPipelineBarrier2KHR
+syntax keyword vkFunction vkCmdResetEventKHR
+syntax keyword vkFunction vkCmdResetEvent2KHR
+syntax keyword vkFunction vkCmdSetEventKHR
+syntax keyword vkFunction vkCmdSetEvent2KHR
+syntax keyword vkFunction vkCmdWaitEventsKHR
+syntax keyword vkFunction vkCmdWaitEvents2KHR
+syntax keyword vkFunction vkCmdWriteTimestampKHR
+syntax keyword vkFunction vkCmdWriteTimestamp2KHR
+syntax keyword vkFunction vkQueueSubmitKHR
+syntax keyword vkFunction vkQueueSubmit2KHR
 
 
 "EXT
@@ -1865,6 +2064,23 @@ syntax keyword vkConstant VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT
 syntax keyword vkConstant VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT
 syntax keyword vkConstant VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT
 syntax keyword vkConstant VK_IMAGE_TILING_DRM_FORMAT_MODIFIER_EXT
+
+syntax keyword vkConstant VK_ACCESS_2_TRANSFORM_FEEDBACK_WRITE_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_CONDITIONAL_RENDERING_READ_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_FRAGMENT_DENSITY_MAP_READ_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_DESCRIPTOR_BUFFER_READ_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_MICROMAP_READ_BIT_EXT
+syntax keyword vkConstant VK_ACCESS_2_MICROMAP_WRITE_BIT_EXT
+
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TRANSFORM_FEEDBACK_BIT_EXT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_CONDITIONAL_RENDERING_BIT_EXT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_FRAGMENT_DENSITY_PROCESS_BIT_EXT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_TASK_SHADER_BIT_EXT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_MESH_SHADER_BIT_EXT
+syntax keyword vkConstant VK_PIPELINE_STAGE_2_MICROMAP_BUILD_BIT_EXT
 
 syntax keyword vkType VkDrmFormatModifierPropertiesEXT
 syntax keyword vkType VkImageDrmFormatModifierPropertiesEXT
