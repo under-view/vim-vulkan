@@ -939,6 +939,9 @@ syntax keyword vkConstant VK_SEMAPHORE_TYPE_BINARY
 syntax keyword vkConstant VK_SEMAPHORE_TYPE_TIMELINE
 syntax keyword vkConstant VK_SEMAPHORE_WAIT_ANY_BIT
 
+syntax keyword vkConstant VK_CHROMA_LOCATION_COSITED_EVEN
+syntax keyword vkConstant VK_CHROMA_LOCATION_MIDPOINT
+
 syntax keyword vkType VkInstance
 syntax keyword vkType VkPhysicalDevice
 syntax keyword vkType VkDevice
@@ -1258,6 +1261,15 @@ syntax keyword vkType VkDependencyInfo
 syntax keyword vkType VkCheckpointData2NV
 syntax keyword vkType VkCommandBufferSubmitInfo
 syntax keyword vkType VkSemaphoreSubmitInfo
+syntax keyword vkType VkSamplerYcbcrConversion
+syntax keyword vkType VkSamplerYcbcrConversionInfo
+syntax keyword vkType VkSamplerYcbcrConversionCreateInfo
+syntax keyword vkType VkSamplerYcbcrModelConversion
+syntax keyword vkType VkSamplerYcbcrRange
+syntax keyword vkType VkChromaLocation
+syntax keyword vkType VkSamplerYcbcrConversionImageFormatProperties
+syntax keyword vkType VkImagePlaneMemoryRequirementsInfo
+syntax keyword vkType VkPhysicalDeviceSamplerYcbcrConversionFeatures
 
 syntax keyword vkType PFN_vkAllocateCommandBuffers
 syntax keyword vkType PFN_vkAllocateDescriptorSets
@@ -1581,6 +1593,8 @@ syntax keyword vkFunction vkBindBufferMemory2
 syntax keyword vkFunction vkBindImageMemory2
 syntax keyword vkFunction vkCmdWriteBufferMarker2AMD
 syntax keyword vkFunction vkGetQueueCheckpointData2NV
+syntax keyword vkFunction vkCreateSamplerYcbcrConversion
+syntax keyword vkFunction vkDestroySamplerYcbcrConversion
 
 
 "KHR
@@ -1759,6 +1773,9 @@ syntax keyword vkConstant VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_BUILD_BIT_K
 syntax keyword vkConstant VK_PIPELINE_STAGE_2_RAY_TRACING_SHADER_BIT_KHR
 syntax keyword vkConstant VK_PIPELINE_STAGE_2_ACCELERATION_STRUCTURE_COPY_BIT_KHR
 
+syntax keyword vkConstant VK_CHROMA_LOCATION_COSITED_EVEN_KHR
+syntax keyword vkConstant VK_CHROMA_LOCATION_MIDPOINT_KHR
+
 syntax keyword vkType VkSurfaceKHR
 syntax keyword vkType VkColorSpaceKHR
 syntax keyword vkType VkPresentModeKHR
@@ -1862,6 +1879,15 @@ syntax keyword vkType VkPipelineStageFlagsKHR
 syntax keyword vkType VkPipelineStageFlags2KHR
 syntax keyword vkType VkSubmitFlagsKHR
 syntax keyword vkType VkSubmitFlagBitsKHR
+syntax keyword vkType VkSamplerYcbcrConversionKHR
+syntax keyword vkType VkSamplerYcbcrConversionInfoKHR
+syntax keyword vkType VkSamplerYcbcrConversionCreateInfoKHR
+syntax keyword vkType VkSamplerYcbcrModelConversionKHR
+syntax keyword vkType VkSamplerYcbcrRangeKHR
+syntax keyword vkType VkChromaLocationKHR
+syntax keyword vkType VkSamplerYcbcrConversionImageFormatPropertiesKHR
+syntax keyword vkType VkImagePlaneMemoryRequirementsInfoKHR
+syntax keyword vkType VkPhysicalDeviceSamplerYcbcrConversionFeaturesKHR
 
 syntax keyword vkType PFN_vkAcquireNextImageKHR
 syntax keyword vkType PFN_vkCreateAndroidSurfaceKHR
@@ -1973,6 +1999,8 @@ syntax keyword vkFunction vkCmdWriteTimestampKHR
 syntax keyword vkFunction vkCmdWriteTimestamp2KHR
 syntax keyword vkFunction vkQueueSubmitKHR
 syntax keyword vkFunction vkQueueSubmit2KHR
+syntax keyword vkFunction vkCreateSamplerYcbcrConversionKHR
+syntax keyword vkFunction vkDestroySamplerYcbcrConversionKHR
 
 
 "EXT
