@@ -1252,6 +1252,7 @@ syntax keyword vkType VkMemoryDedicatedAllocateInfo
 syntax keyword vkType VkMemoryDedicatedRequirements
 syntax keyword vkType VkBindBufferMemoryInfo
 syntax keyword vkType VkBindImageMemoryInfo
+syntax keyword vkType VkBindImagePlaneMemoryInfo
 syntax keyword vkType VkPhysicalDeviceSynchronization2Features
 syntax keyword vkType VkDependencyInfo
 syntax keyword vkType VkCheckpointData2NV
@@ -1844,6 +1845,7 @@ syntax keyword vkType VkMemoryDedicatedAllocateInfoKHR
 syntax keyword vkType VkMemoryDedicatedRequirementsKHR
 syntax keyword vkType VkBindBufferMemoryInfoKHR
 syntax keyword vkType VkBindImageMemoryInfoKHR
+syntax keyword vkType VkBindImagePlaneMemoryInfoKHR
 syntax keyword vkType VkPhysicalDeviceSynchronization2FeaturesKHR
 syntax keyword vkType VkDependencyInfoKHR
 syntax keyword vkType VkBufferMemoryBarrierKHR
